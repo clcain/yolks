@@ -1,8 +1,6 @@
 FROM clcain/yolks:debian
 
-RUN dpkg --add-architecture i386 \
-        && apt update \
-        && apt install -y \
+RUN dpkg --add-architecture i386 && apt update && apt install -y \
         g++ \
         gcc \
         gdb \
