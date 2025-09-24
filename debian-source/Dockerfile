@@ -13,7 +13,7 @@ RUN dpkg --add-architecture i386 && apt update && apt install -y \
         libcurl4:i386 \
         libfontconfig1 \
         libgcc1 \
-        libncurses5:i386 \
+        libncurses6:i386 \
         libsdl1.2debian \
         libsdl2-2.0-0:i386 \
         libssl3:i386 \
