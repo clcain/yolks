@@ -13,6 +13,7 @@ then
     cat /mnt/startup/startup.sh
     /mnt/startup/startup.sh
 elif [ ! -z "$STARTUP" ]
+then
     echo "Executing \$STARTUP"
     echo "$STARTUP"
     eval "$STARTUP"
