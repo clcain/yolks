@@ -1,4 +1,4 @@
-FROM clcain/yolks:debian
+FROM clcain/yolks:debian-steam
 
 RUN apt update && apt install -y \
         lib32stdc++6 \
