@@ -18,4 +18,5 @@ RUN dpkg --add-architecture i386 && apt update && apt install -y \
         libsdl2-2.0-0:i386 \
         libssl3:i386 \
         libtinfo6:i386 \
-        && apt clean
+        && apt clean \
+        && rm -rf /var/lib/apt/lists/*
