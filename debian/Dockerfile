@@ -10,16 +10,20 @@ RUN dpkg --add-architecture i386 && apt update && apt install -y \
         jq \
         lib32gcc-s1 \
         libsdl2-2.0-0:i386 \
+        lsof \
         locales \
         nano \
         net-tools \
         netcat-traditional \
+        tcpdump \
         tar \
         telnet \
+        traceroute \
         tzdata \
         vim \
         wget \
-        && apt clean
+        && apt clean \
+        && rm -rf /var/lib/apt/lists/*
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh

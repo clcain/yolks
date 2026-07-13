@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ "$1" = "run" ]; then
+    shift
+fi
+
+export WINEDEBUG="${WINEDEBUG:--all}"
+
+exec wine "$@"
