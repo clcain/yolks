@@ -1,6 +1,6 @@
 FROM debian:trixie-slim
 
-RUN apt update && apt install -y \
+RUN dpkg --add-architecture i386 && apt update && apt install -y \
         ca-certificates \
         curl \
         dnsutils \
@@ -11,6 +11,8 @@ RUN apt update && apt install -y \
         iproute2 \
         iputils-ping \
         jq \
+        lib32gcc-s1 \
+        libsdl2-2.0-0:i386 \
         lsof \
         locales \
         nano \

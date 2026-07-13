@@ -1,7 +1,6 @@
 FROM clcain/yolks:debian
 
-RUN dpkg --add-architecture i386 && apt update && apt install -y \
-        lib32gcc-s1 \
+RUN apt update && apt install -y \
         lib32stdc++6 \
         lib32tinfo6 \
         lib32z1 \
@@ -12,7 +11,6 @@ RUN dpkg --add-architecture i386 && apt update && apt install -y \
         libgcc1 \
         libncurses6:i386 \
         libsdl1.2debian \
-        libsdl2-2.0-0:i386 \
         libssl3:i386 \
         libtinfo6:i386 \
         && apt clean \
