@@ -1,4 +1,4 @@
-FROM clcain/yolks:debian
+FROM clcain/yolks:debian-source
 
 USER root
 
