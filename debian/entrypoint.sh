@@ -1,8 +1,13 @@
 #!/bin/bash
 
 echo "Running default /entrypoint.sh"
-env
 echo
+
+if [ "${DEBUG,,}" = "true" ] || [ "${DEBUG}" = "1" ]
+then
+    env
+    echo
+fi
 
 if [ -f /mnt/install/install.sh ]
 then
