@@ -8,7 +8,3 @@ RUN apt update && apt install -y \
         winbind \
         && apt clean \
         && rm -rf /var/lib/apt/lists/*
-
-COPY proton /usr/local/bin/proton
-
-RUN chmod +x /usr/local/bin/proton
